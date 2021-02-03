@@ -1,0 +1,192 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 	xmlns:f="sap.f"
+		controllerName="progress.s2" xmlns:html="http://www.w3.org/1999/xhtml">
+		
+			
+		<html:style>
+		.changeTitleColor{
+		color:red;
+		}
+		.gridList2{
+		margin-left:27%
+		}
+		.gridList3{
+		margin-left:65%
+		}
+		.minimizeIconCol{
+		zoom:65%
+		}
+		</html:style>
+		
+	
+		
+	<Page title="Analysis Report">
+		<!-- <HBox justifyContent="End">
+			
+		<Button icon="sap-icon://minimize"/>
+			<Button icon="sap-icon://add-equipment"/>
+				<Button icon="sap-icon://decline" />
+	</HBox> -->
+	
+	<Panel id="panelForGridList">
+		<headerToolbar>
+			<Toolbar height="3rem">
+				<Title text="Analysis Report" />
+				<ToolbarSpacer/>
+				
+			
+				<Button icon="sap-icon://minimize" class="minimizeIconCol"/>
+			<Button icon="sap-icon://add-equipment" class="minimizeIconCol"/>
+				<Button icon="sap-icon://decline" class="minimizeIconCol"/>
+				
+			</Toolbar>
+		</headerToolbar>
+		
+<HBox>
+		<f:GridList>
+			<f:GridListItem   >
+					<VBox class="a">
+			
+			
+		<Text text="Daily Analysis" class="changeTitleColor" />
+			<ProgressIndicator
+			
+				class="sapUiSmallMarginBottom"
+				percentValue="30"
+				displayValue="30%"
+				showValue="true"
+				state="None" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="50"
+				showValue="false"
+				state="Error" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="99"
+				displayValue="0.99GB of 1GB"
+				showValue="true"
+				state="Success" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="25"
+				displayValue="25%"
+				showValue="true"
+				state="Warning" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="40"
+				displayValue="40%"
+				showValue="true"
+				state="Information" />
+			
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="40"
+				displayValue="yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+				showValue="true"
+				state="Success" />
+			
+		
+				</VBox>
+			</f:GridListItem>
+		</f:GridList>
+		<f:GridList class="gridList2">
+			<f:GridListItem>
+					<VBox class="a">
+			
+			
+		<Text text="Daily Analysis" class="sapUiSmallMarginBottom" />
+			<ProgressIndicator
+			
+				class="sapUiSmallMarginBottom"
+				percentValue="30"
+				displayValue="30%"
+				showValue="true"
+				state="None" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="50"
+				showValue="false"
+				state="Error" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="99"
+				displayValue="0.99GB of 1GB"
+				showValue="true"
+				state="Success" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="25"
+				displayValue="25%"
+				showValue="true"
+				state="Warning" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="40"
+				displayValue="40%"
+				showValue="true"
+				state="Information" />
+			
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="40"
+				displayValue="yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+				showValue="true"
+				state="Success" />
+			
+		
+				</VBox>
+			</f:GridListItem>
+		</f:GridList>
+		<f:GridList class="gridList3">
+			<f:GridListItem>
+					<VBox class="a">
+			
+			
+		<Text text="Daily Analysis" class="sapUiSmallMarginBottom" />
+			<ProgressIndicator
+			
+				class="sapUiSmallMarginBottom"
+				percentValue="30"
+				displayValue="30%"
+				showValue="true"
+				state="None" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="50"
+				showValue="false"
+				state="Error" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="99"
+				displayValue="0.99GB of 1GB"
+				showValue="true"
+				state="Success" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="25"
+				displayValue="25%"
+				showValue="true"
+				state="Warning" />
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="40"
+				displayValue="40%"
+				showValue="true"
+				state="Information" />
+			
+			<ProgressIndicator
+				class="sapUiSmallMarginBottom"
+				percentValue="40"
+				displayValue="yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+				showValue="true"
+				state="Success" />
+			
+		
+				</VBox>
+			</f:GridListItem>
+		</f:GridList>
+		</HBox>
+	</Panel>
+	</Page>
+</core:View>
